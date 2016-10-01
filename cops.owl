@@ -1,0 +1,2064 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#at">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_EXPRESSION"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#at"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#at"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#defined_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#defined_by">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#defined_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#defined_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PLATAFORM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_SOFTWARE"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTABLE_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_SOFTWARE"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_data"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETABLE-PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILABLE_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_agent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_instrument -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_instrument">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPERATING_SYSTEM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#VIRTUAL_MACHINE"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILER"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETER"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_instrument"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_member -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_member">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_member"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COLLECTION_OF_COMPUTER_LANGUAGE_EXPRESSIONS"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_member"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE_EXPRESSIONS"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#has_for_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETING_A_PROGRAM"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARTEFACT"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LIBRARY"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERMEDIATE_LANGUAGE"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MACHINE_LANGUAGE"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_LANGUAGE"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_referred_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_referred_to">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_referred_to"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIRETOCRY"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_referred_to"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_referred_to"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYMBOLIC_LINK"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_the_compression_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_the_compression_of">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_the_compression_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#is_the_compression_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#realizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#realizes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT_EXPRESSION"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_EXPRESSION"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#same_as -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#same_as"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#at -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#at"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#during_a -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#during_a">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#during_a"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ABDUCTIVE_LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ABDUCTIVE_LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AGENT-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AGENT-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ANSWER_SET -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ANSWER_SET">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT_EXPRESSION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT_EXPRESSION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE_EXPRESSIONS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARRAY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARRAY">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NON-STRUCTURED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARRAY-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARRAY-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARTEFACT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARTEFACT"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ASPECT-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ASPECT-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BY_SEPARATION_OF_CONCERNS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ATTRIBUTE-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ATTRIBUTE-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REFLECTIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AUTOMATA-BASED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AUTOMATA-BASED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AUTOMATIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AUTOMATIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#METAPROGRAMMING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY_DOCUMENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY_DOCUMENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BLOCK-STRUCTURED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BLOCK-STRUCTURED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STRUCTURED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BMP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BMP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BMP_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BMP_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BY_SEPARATION_OF_CONCERNS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BY_SEPARATION_OF_CONCERNS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OBJECT-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CATALOG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CATALOG">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#same_as"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CATALOG"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIRETOCRY"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FOLDER"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CELL-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CELL-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATAFLOW"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASS-BASED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASS-BASED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OBJECT-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	
+	<!--THAIS-->
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BOOSTING_(MACHINE_LEARNING)">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NAIVE_BAYES_CLASSIFIER">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FEATURE_SELECTION_TOOLBOX">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LINEAR_CLASSIFIER">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARTIFICIAL_NEURAL_NETWORK">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGITBOOST">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IDISTANCE">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GROUP_METHOD_OF_DATA_HANDLING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TYPES_OF_ARTIFICIAL_NEURAL_NETWORKS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RANDOM_SUBSPACE_METHOD">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTINOMIAL_LOGISTIC_REGRESSION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ADABOOST">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECISION_BOUNDARY">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MONTE_CARLO_MACHINE_LEARNING_LIBRARY">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ADAPTIVE_PROJECTED_SUBGRADIENT_METHOD">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTISPECTRAL_PATTERN_RECOGNITION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPTIMAL_DISCRIMINANT_ANALYSIS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFIER_CHAINS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PERCEPTRON">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERALIZATION_ERROR">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ID3_ALGORITHM">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTILAYER_PERCEPTRON">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RADIAL_BASIS_FUNCTION_NETWORK">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NEAREST_CENTROID_CLASSIFIER">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCEPTUAL_CLUSTERING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTIFACTOR_DIMENSIONALITY_REDUCTION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INFORMATION_GAIN_IN_DECISION_TREES">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CALIBRATION_(STATISTICS)">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTICLASS_CLASSIFICATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#AVERAGED_ONE-DEPENDENCE_ESTIMATORS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#VARIABLE_KERNEL_DENSITY_ESTIMATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#HYPER_BASIS_FUNCTION_NETWORK">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECISION_TREE_LEARNING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COBOOSTING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARGIN_CLASSIFIER">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ONE-CLASS_CLASSIFICATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BORUTA_(ALGORITHM)">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CO-TRAINING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INFORMATION_GAIN_RATIO">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFT_INDEPENDENT_MODELLING_OF_CLASS_ANALOGIES">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPOSITIONAL_PATTERN-PRODUCING_NETWORK">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GESTURE_DESCRIPTION_LANGUAGE">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RANDOM_FOREST">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WHITENING_TRANSFORMATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EVOLVING_CLASSIFICATION_FUNCTION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#C4.5_ALGORITHM">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NOVELTY_DETECTION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTIPLE_DISCRIMINANT_ANALYSIS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#KERNEL_METHOD">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SUPPORT_VECTOR_MACHINE">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ALOPEX">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ALTERNATING_DECISION_TREE">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CASE-BASED_REASONING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#QUADRATIC_CLASSIFIER">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STATISTICAL_CLASSIFICATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LINEAR_DISCRIMINANT_ANALYSIS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARGIN_INFUSED_RELAXED_ALGORITHM">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CHAID">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#K-NEAREST_NEIGHBORS_ALGORITHM">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RELEVANCE_VECTOR_MACHINE">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOCALITY-SENSITIVE_HASHING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WINNOW_(ALGORITHM)">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LEARNING_VECTOR_QUANTIZATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BROWNBOOST">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ANALOGICAL_MODELING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DEEPLEARNING4J">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#Ε-APPROXIMATE_NEAREST_NEIGHBOR_SEARCH">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEXTUAL_CASE-BASED_REASONING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ADAPTRON">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NEAREST_NEIGHBOR_SEARCH">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MULTI-LABEL_CLASSIFICATION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NEAREST_NEIGHBOUR_CLASSIFIERS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ELASTIC_MATCHING">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INFORMATION_FUZZY_NETWORKS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LARGE_MARGIN_NEAREST_NEIGHBOR">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYNTACTIC_PATTERN_RECOGNITION">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CASCADING_CLASSIFIERS">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SUKHOTINS_ALGORITHM">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+	<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LEAST_SQUARES_SUPPORT_VECTOR_MACHINE">
+		<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CLASSIFICATION"/>
+	</owl:Class>
+
+	<!--THAIS-->
+	
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COLLECTION_OF_COMPUTER_LANGUAGE_EXPRESSIONS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COLLECTION_OF_COMPUTER_LANGUAGE_EXPRESSIONS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMMAND_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMMAND_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOMAIN_SPECIFIC_COMPUTER_LANGUAGE"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#QUERY_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILABLE_PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILABLE_PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILING_A_PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPILING_A_PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYMBOLIC_ACTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE_EXPRESSIONS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE_EXPRESSIONS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FORMAL_EXPRESSION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTING_GRID_MIDDLEWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTING_GRID_MIDDLEWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRID_MIDDLEWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCATENATIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCATENATIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#POINT-FREE_STYLE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCEPT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCEPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OBJECT-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_COMPUTING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_COMPUTING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_CONSTRAINT_LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_CONSTRAINT_LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONSTRAINT_LOGIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONSTRAINT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONSTRAINT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECLARATIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONSTRAINT_LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONSTRAINT_LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONSTRAINT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA-DRIVEN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA-DRIVEN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATAFLOW -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATAFLOW">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECLARATIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_MANIPULATION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_MANIPULATION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECLARATIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECLARATIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DEVICE_FILE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DEVICE_FILE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIALECTING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIALECTING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRAMMAR-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DICOM_ZIP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DICOM_ZIP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ZIP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIRETOCRY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIRETOCRY">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#same_as"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CATALOG"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIRETOCRY"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FOLDER"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DISCIPLINE-SPECIFIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DISCIPLINE-SPECIFIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOCUMENT_DESCRIPTION_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOCUMENT_DESCRIPTION_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOMAIN-SPECIFIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOMAIN-SPECIFIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOMAIN_SPECIFIC_COMPUTER_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOMAIN_SPECIFIC_COMPUTER_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_MANIPULATION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#END-USER_PROGRAMMING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#END-USER_PROGRAMMING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EVENT-DRIVEN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EVENT-DRIVEN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTABLE_PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTABLE_PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTING_A_PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXECUTING_A_PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXPRESSION-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EXPRESSION-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FEATURE-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FEATURE-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INSCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FLOW-BASED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FLOW-BASED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATAFLOW"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FOLDER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FOLDER">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#same_as"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CATALOG"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DIRETOCRY"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FOLDER"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FORMAL_EXPRESSION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FORMAL_EXPRESSION"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTION-LEVEL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTION-LEVEL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTIONAL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTIONAL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECLARATIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTIONAL_LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTIONAL_LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTIONAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE_DESCRIPTION_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GIF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GIF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GIF_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GIF_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GLITE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GLITE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STORAGE_GRID_MIDDLEWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GLOBUS_TOOLKIT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GLOBUS_TOOLKIT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GLITE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRAMMAR-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRAMMAR-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRID_MIDDLEWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRID_MIDDLEWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MIDDLEWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#HIGH_LEVEL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#HIGH_LEVEL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#HOMOICONIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#HOMOICONIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#METAPROGRAMMING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE_DESCRIPTION_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE_DESCRIPTION_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMA_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMA_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMG_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMG_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMPERATIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMPERATIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INDUCTIVE_LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INDUCTIVE_LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGIC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INDUCTIVE_PROGRAMMING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INDUCTIVE_PROGRAMMING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INSCRIPTION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INSCRIPTION"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTENTIONAL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTENTIONAL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERMEDIATE_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERMEDIATE_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOW_LEVEL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETABLE-PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETABLE-PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETER -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETER">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETING_A_PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#INTERPRETING_A_PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#JPEG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#JPEG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#JPEG_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#JPEG_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GENERAL_IMAGE_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LIBRARY -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LIBRARY">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COLLECTION_OF_COMPUTER_LANGUAGE_EXPRESSIONS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LINUX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LINUX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#UNIX"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LITERATE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LITERATE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMPERATIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DECLARATIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOW_LEVEL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOW_LEVEL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MACHINE_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MACHINE_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LOW_LEVEL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARKUP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARKUP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEXT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARKUP_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARKUP_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MEDICAL_IMAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MEDICAL_IMAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MEDICAL_IMAGE_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MEDICAL_IMAGE_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMAGE_DESCRIPTION_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#METAPROGRAMMING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#METAPROGRAMMING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MIDDLEWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MIDDLEWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MODULAR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MODULAR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STRUCTURED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NATURAL_LANGUAGE_PROGRAMMING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NATURAL_LANGUAGE_PROGRAMMING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#LANGUAGE-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NON-STRUCTURED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NON-STRUCTURED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NONDETERMINISTIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#NONDETERMINISTIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OBJECT-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OBJECT-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STRUCTURED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPERATING_SYSTEM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPERATING_SYSTEM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OSX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OSX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPERATING_SYSTEM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PARALLEL_COMPUTING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PARALLEL_COMPUTING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PDF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PDF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY_DOCUMENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PDF_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PDF_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOCUMENT_DESCRIPTION_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PLATAFORM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PLATAFORM"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#POINT-FREE_STYLE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#POINT-FREE_STYLE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#POLICY-BASED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#POLICY-BASED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEMPLATE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROBABILISTIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROBABILISTIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROCEDURAL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROCEDURAL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#IMPERATIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROCESS-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROCESS-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PARALLEL_COMPUTING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COLLECTION_OF_COMPUTER_LANGUAGE_EXPRESSIONS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_MANIPULATION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROTOTYPE-BASED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROTOTYPE-BASED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OBJECT-ORIENTED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PURELY_FUNCTIONAL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PURELY_FUNCTIONAL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FUNCTIONAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#QUERY_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#QUERY_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOMAIN_SPECIFIC_COMPUTER_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RAR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RAR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RAR_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RAR_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REACTIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REACTIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATAFLOW"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RECURSIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RECURSIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STRUCTURED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REFLECTIVE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REFLECTIVE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#METAPROGRAMMING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REGULAR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#REGULAR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RELATIVISTIC_PROGRAMMING -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RELATIVISTIC_PROGRAMMING">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#CONCURRENT_COMPUTING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RESOURCE_LOCATION_DESCRIPTION_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RESOURCE_LOCATION_DESCRIPTION_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DATA_DESCRIPTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ROLE-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ROLE-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BY_SEPARATION_OF_CONCERNS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_AN_ARTEFACT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_AN_ARTEFACT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_PROGRAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_AN_ARTEFACT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_SOFTWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_A_SOFTWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RUNNING_AN_ARTEFACT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SEMANTIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SEMANTIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SERVICE-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SERVICE-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EVENT-DRIVEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COLLECTION_OF_COMPUTER_LANGUAGE_EXPRESSIONS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STDERR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STDERR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STREAM_FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STDIN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STDIN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STREAM_FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STDOUT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STDOUT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STREAM_FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STORAGE_GRID_MIDDLEWARE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STORAGE_GRID_MIDDLEWARE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#GRID_MIDDLEWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STREAM_FILE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STREAM_FILE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STRUCTURED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#STRUCTURED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SUBJECT-ORIENTED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SUBJECT-ORIENTED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BY_SEPARATION_OF_CONCERNS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYMBOLIC_ACTION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYMBOLIC_ACTION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ACTION"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYMBOLIC_LINK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SYMBOLIC_LINK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SPECIAL"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEMPLATE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEMPLATE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#METAPROGRAMMING"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEXT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TEXT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#FILE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TIME-DRIVEN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#TIME-DRIVEN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#EVENT-DRIVEN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#UNIX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#UNIX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPERATING_SYSTEM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#UNIX_FILE_ADDRESSING_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#UNIX_FILE_ADDRESSING_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RESOURCE_LOCATION_DESCRIPTION_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#URI_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#URI_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RESOURCE_LOCATION_DESCRIPTION_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#URL_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#URL_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#URI_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#VALUE-LEVEL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#VALUE-LEVEL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#PROGRAMMING_PARADIGMS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#VIRTUAL_MACHINE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#VIRTUAL_MACHINE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#SOFTWARE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WINDOWS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WINDOWS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#OPERATING_SYSTEM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WINDOWS_FILE_ADDRESSING_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WINDOWS_FILE_ADDRESSING_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#RESOURCE_LOCATION_DESCRIPTION_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WORD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WORD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#BINARY_DOCUMENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WORD_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WORD_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#DOCUMENT_DESCRIPTION_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WSDL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WSDL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WSDL_LANGUAGE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#WSDL_LANGUAGE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_FORMAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARKUP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_EXPRESSION -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_EXPRESSION">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#COMPUTER_LANGUAGE_EXPRESSIONS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#XML_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#MARKUP_LANGUAGE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ZIP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ZIP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ZIP_FORMAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ZIP_FORMAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-ontology-2#ARCHIVE_FORMAT"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

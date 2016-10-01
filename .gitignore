@@ -1,0 +1,23 @@
+*.pyc
+env
+PyWANN
+__pycache__
+.idea
+
+#ignore thumbnails created by windows
+Thumbs.db
+
+
+config
+description
+HEAD
+hooks/applypatch-msg.sample
+hooks/commit-msg.sample
+hooks/post-update.sample
+hooks/pre-applypatch.sample
+hooks/pre-commit.sample
+hooks/prepare-commit-msg.sample
+hooks/pre-push.sample
+hooks/pre-rebase.sample
+hooks/update.sample
+info/exclude

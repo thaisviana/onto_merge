@@ -1,0 +1,15 @@
+Owlready==0.2
+beautifulsoup4==4.5.1
+isodate==0.5.4
+nltk==3.2.1
+numpy==1.11.1
+owllib==0.1.0
+post==0.0.0
+pronto==0.4.0
+public==0.0.37
+pyparsing==2.1.9
+query-string==0.0.11
+rdflib==4.2.1
+requests==2.11.1
+setupfiles==0.0.13-
+six==1.10.0
