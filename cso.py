@@ -25,10 +25,10 @@ class CSOOntology:
     def refine_classes(self, ontology_class):
         name = self.get_name(ontology_class)
         comment = self.get_comment(ontology_class)
-        if (name, comment) is not ('', ''):
+        if comment is not '':
             onto_class = OntologyClass()
             onto_class.properties = [self.get_properties(ontology_class)]
-            onto_class.name, onto_class.comment = self.get_name(ontology_class), self.get_comment(ontology_class)
+            onto_class.name, onto_class.comment = name, comment
             self.classes.append(onto_class)
 
     def get_name(self, ontology_class):
@@ -48,12 +48,24 @@ class CSOOntology:
         return match
 
     def get_comment(self, ontology_class):
-        pattern = re.compile('<rdfs:comment rdf:datatype=.* >(.)*<\/rdfs:comment>', re.IGNORECASE)
+        texts = ontology_class.split('<rdfs:comment')
+        if len(texts) > 1:
+            match = texts[1]
+            """pattern = re.compile('<rdfs:comment>(.)*<\/rdfs:comment>', re.IGNORECASE)
+            match = self.find_pattern(pattern, ontology_class)"""
+            match = match.replace('rdf:datatype="http://www.w3.org/2001/XMLSchema#string', '')
+            match = match.split('</rdfs:comment>')
+            match = match[0]
+            match = match.replace('>', '')
+            match = match.replace('\n', '')
+            return match
+        return ''
+        """pattern = re.compile('<rdfs:comment rdf:datatype=.* >(.)*<\/rdfs:comment>', re.IGNORECASE)
         match = self.find_pattern(pattern, ontology_class)
         match = match.replace('<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"', '')
         match = match.replace('</rdfs:comment>', '').replace('    ', '')
         match = match.replace('>', '')
-        return match
+        return match"""
 
     def find_pattern(self, pattern, ontology_class):
         match = re.search(pattern, ontology_class)

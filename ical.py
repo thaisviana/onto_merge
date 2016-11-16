@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class COPSOntology:
+class ICALOntology:
     def __init__(self, owl):
         self.classes = []
         class_pattern = ""
@@ -32,11 +32,9 @@ class COPSOntology:
             self.classes.append(onto_class)
 
     def get_name(self, ontology_class):
-        pattern = re.compile('<owl:Class rdf:about="http:\/\/www\.semanticweb\.org\/marlem\/ontologies\/2015\/10\/'
-                             'untitled-ontology-2#(\S+)[">]', re.IGNORECASE)
+        pattern = re.compile('<owl:Class rdf:ID="(\S+)[">]', re.IGNORECASE)
         match = self.find_pattern(pattern, ontology_class)
-        match = match.replace('<owl:Class rdf:about="http://www.semanticweb.org/marlem/ontologies/2015/10/untitled-'
-                              'ontology-2#', '').replace('">', '')
+        match = match.replace('<owl:Class rdf:ID="', '').replace('">', '')
         return match
 
     def get_properties(self, ontology_class):
