@@ -9,14 +9,16 @@ def preProcessing(text):
     #nltk.download('all')
     #stopwords_python = ["str","init","self","and","del","from","not","while","as","elif","global","or","with","assert","else","if","pass","yield","break","except","import","print","class","exec","in","raise","continue","finally","is","return","def","for","lambda","try"];
     stemer = LancasterStemmer()
-    text = text.lower()
-    """text = re.sub('\"', '', text)
-    text = re.sub('\'', '', text)
-    text = re.sub('#', '', text)
-    text = remove_marks(text)
-    text = re.sub('[^a-zA-Z0-9]+', ' ', text)"""
-
-    tokens = nltk.word_tokenize(text)
+    if type(text) == str:
+        text = text.lower()
+        """text = re.sub('\"', '', text)
+        text = re.sub('\'', '', text)
+        text = re.sub('#', '', text)
+        text = remove_marks(text)
+        text = re.sub('[^a-zA-Z0-9]+', ' ', text)"""
+        tokens = nltk.word_tokenize(text)
+    else :
+        tokens = text
     bagOfWords = {}
     limit_bagOfWords ={}
     for token in tokens:

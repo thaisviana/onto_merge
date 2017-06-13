@@ -1,22 +1,30 @@
 from ical import ICALOntology
-
+from cops import COPSOntology
+from cso import CSOOntology
+from algpedia import build_ontology
 
 def create_ontology_data():
-    f = open('oaei/ical.rdf', encoding="utf8")
-    ical = ICALOntology(owl=f)
-    print('ical', len(ical.classes), [(o_class.name) for o_class in ical.classes if o_class.comment is not ''])
 
-    f = open('oaei/index.rdf', encoding="utf8")
-    index = ICALOntology(owl=f)
-    print('index', len(ical.classes), [(o_class.name) for o_class in index.classes if o_class.comment is not ''])
+    print('cops create_data')
+    f = open('/home/thais/mestrado/onto_merge/cops.owl', encoding="utf8")
+    cops = COPSOntology(owl=f)
+    print('cops', len(cops.classes), [(o_class.name) for o_class in cops.classes if o_class.comment is not ''])
 
-    f = open('oaei/IFC4.ttl', encoding="utf8")
-    ifc = ICALOntology(owl=f)
-    print('ifc', len(ical.classes), [(o_class.name) for o_class in ifc.classes if o_class.comment is not ''])
+    print('cso create_data')
+    f = open('/home/thais/mestrado/onto_merge/cso.owl', encoding="utf8")
+    cso = CSOOntology(owl=f)
+    print('cso', len(cso.classes), [(o_class.name) for o_class in cso.classes if o_class.comment is not ''])
+
+
+    print('cosc create_data')
+    f = open('/home/thais/mestrado/onto_merge/cosc.owl', encoding="utf8")
+    cosc = CSOOntology(owl=f)
+    print('cosc', len(cosc.classes), [(o_class.name) for o_class in cosc.classes if o_class.comment is not ''])
 
     ontology = {}
-    ontology['ical'] = ical
-    ontology['index'] = index
-    ontology['ifc'] = ifc
+    ontology['COPS'] = cops
+    ontology['CSO'] = cso
+    ontology['COSC'] = cosc
+    ontology['algpedia'] = build_ontology()
 
     return ontology

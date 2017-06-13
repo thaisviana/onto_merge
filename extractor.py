@@ -18,7 +18,7 @@ def create_ontology_data():
     algpedia = build_ontology()
     print('algpedia', len(algpedia.classes), [(o_class.name) for o_class in algpedia.classes if o_class.comment is not ''])
 
-    f = open('cops2.owl', encoding="utf8")
+    f = open('/home/thais/mestrado/onto_merge/software_domain/cops2.owl', encoding="utf8")
     cops = COPSOntology(owl=f)
 
     print('cops', len(cops.classes), [(o_class.name) for o_class in cops.classes if o_class.comment is not ''])
